@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:padding="0.0dip"
+    android:paddingBottom="0.0dip"
+    android:paddingRight="0.0dip"
+    android:paddingTop="0.0dip" >
+
+    <ImageView
+        android:id="@+id/showcolor"
+        android:layout_width="fill_parent"
+        android:layout_height="10.0dip"
+        android:layout_below="@+id/colorpal"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/showcolor"
+        android:contentDescription="@string/app_name" />
+
+    <ImageView
+        android:id="@+id/floodfill"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/showcolor"
+        android:layout_marginBottom="5.0dip"
+        android:background="#ffffffff"
+        android:src="@drawable/ic_launcher" 
+        android:contentDescription="@string/app_name"
+        android:layout_marginTop="2dp"/>
+
+    <ImageView
+        android:id="@+id/colorpal"
+        android:layout_width="fill_parent"
+        android:layout_height="84.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" 
+        android:contentDescription="@string/app_name"/>
+
+<!--     <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showcolor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5.0dip" >
+
+        <ImageButton
+            android:id="@+id/ibtnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/content_save"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/ibtnShare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/social_share"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/ibtnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:src="@drawable/av_replay"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" 
+        android:orientation="horizontal">
+        
+          <com.google.android.gms.ads.AdView
+                android:id="@+id/adViewad"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                ads:adSize="BANNER"
+                ads:adUnitId="@string/admob_publisher_id"
+                android:gravity="bottom" />
+          </LinearLayout>
+    
+  
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Coloring Book</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="admob_publisher_id">ca-app-pub-2370416059947025/3491595577</string> <!-- your admob id -->
+    <string name="admob_intertestial_id">ca-app-pub-2370416059947025/4968328771</string> <!-- your admob id -->
+
+    <string name="menu_save">Save</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_repeat">Repeat</string>
+    <string name="menu_rate">RateApp</string>
+    <string name="menu_moreapp">MoreApp</string>
+
+    <!-- play store application link i.e more apps -->
+    <string name="play_more_apps">https://play.google.com/store/search?q=gkcrop</string>
+
+</resources>
